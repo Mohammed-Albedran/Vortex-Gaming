@@ -122,7 +122,104 @@ br{
 footer p a{
     color: black;
 }
-
+/*--------------------bottom nav---------------------*/
+#bottomNav{
+    width: 100%;
+    height: 0;
+    position: fixed;
+    bottom: 0;
+    background-color: #222222;
+    transition: 0.6s;
+    z-index: 1;
+    overflow-y: hidden;
+}
+#icon{
+    position: fixed;
+    bottom: 5px;
+    font-size: 30px;
+    left: 50%;
+    cursor: pointer;
+    top: 93%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 0px 0px 4px white,0px 0px 8px white;
+    animation-name: animation2;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    display: none;
+}
+@keyframes animation2{
+    0%{
+        top: 93%;
+    }
+    50%{
+        top: 91%;
+    }
+    100%{
+        top: 93%;
+    }
+}
+ #ul2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    list-style: none;
+}
+.liID{
+    padding: 10px;
+    /* border: 2px solid black; */
+    margin: 8px;
+    font-size: large;
+    clear: both;
+    color: #222222;
+    /* transition: 5s; */
+    /* display: none; */
+}
+.liID a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10px;
+    color: #222222;
+    /* transition: 5s; */
+    /* color: white; */
+}
+.icons{
+    /* color: white; */
+    font-size: 25px;
+    text-decoration: none;
+}
+.home{
+    transition: 1s;
+    transition-delay: 0.3s;
+}
+.videos{
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.contact{
+    transition: 1s;
+    transition-delay: 0.7s;
+}
+.links{
+    transition: 1s;
+    transition-delay: 0.9s;
+}
+.about{
+    transition: 1s;
+    transition-delay: 1.1s;
+}
+#closeNav{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+    cursor: pointer;
+}
+/*--------------------end bottom nav-----------------*/
 @media only screen and (max-width:1768px) and (min-width:1443px){
     header ul{
         width: 35%;
@@ -252,6 +349,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -339,6 +439,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -426,6 +529,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -507,6 +613,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -593,6 +702,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -680,6 +792,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -764,6 +879,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -848,6 +966,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -932,6 +1053,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -1016,6 +1140,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -1089,6 +1216,9 @@ footer p a{
         line-height: normal;
         display: list-item;
     } */
+    #icon{
+        display: block;
+    }
     header{
         display: none;
     }
@@ -1163,6 +1293,9 @@ footer p a{
 }
 @media only screen and (max-width:259px){
     header{
+        display: none;
+    }
+    #icon{
         display: none;
     }
     footer{
